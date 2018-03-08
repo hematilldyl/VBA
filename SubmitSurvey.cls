@@ -7,6 +7,15 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
+
+===============================================================
+'SubmitSurvey
+'---------------------------------------------------------------
+' Purpose: Once the survey sheet has been filled, hides the sheets
+'          and only shows a blank sheet, print the results in the 
+'          report template as a pdf and then emails the pdf to
+'          the data collector
+'===============================================================
 Private Sub CommandButton1_Click()
 
 Dim ws As Worksheet
@@ -22,11 +31,8 @@ Set wb = ActiveWorkbook
 Set ws = wb.Sheets("Results")
 Set ws2 = wb.Sheets("Summary Report")
 
-
-
-
-Worksheets("Summary Report").Visible = True
-Worksheets("Summary Report").Activate
+ws2.Visible = True
+ws2.Activate
 
 For i = 5 To 9
     For j = 1 To 2
@@ -58,7 +64,7 @@ Set objOutlook = CreateObject("Outlook.Application")
 Set objOutlookMsg = objOutlook.CreateItem(olMailItem)
 
 With objOutlookMsg
-    Set objOutlookRecip = .Recipients.Add("dylan.hematillake@value-infinity.com")
+    Set objOutlookRecip = .Recipients.Add("dylan.hematillake@the_email.com")
     objOutlookRecip.Type = olTo
    .Subject = "Test"
    .Body = "Talent Management Survey"
