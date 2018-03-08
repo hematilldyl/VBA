@@ -9,22 +9,6 @@ Function InverseRegression(Y, X, y0, conf)
 '          confidence interval for new value of the X given a
 '          specific value of the dependent variable Y (inverse
 '          regression).
-'
-' Author : Jeff Moreland
-'          Ansell Healthcare Products, LLC.
-'          511 Westinghouse Rd.
-'          Pendleton, SC 29670
-'          jmoreland@ansell.com
-'
-' Date   : 22 Aug 2009
-'
-' Notes  : Based on the Minitab macro CALIB.MAC (1).
-' Refs   : [1] Derr, J. and S. Beder-Miller, CALIB.MAC. 1987,
-'              Minitab, Inc. (http://www.minitab.com/en-US/
-'              support/macros/default.aspx?action=code&id=11)
-'          [2] Neter, J., et al., Applied linear statistical
-'              models, ed., Irwin Homewood, IL: 1990.
-'
 '---------------------------------------------------------------
 ' Parameters
 '   y, x, y0, conf
@@ -34,17 +18,12 @@ Function InverseRegression(Y, X, y0, conf)
 '   y0: Y value for which X should be estimated
 '   conf: Confidence level for interval estimate (0-100%)
 '-----------
-'
 '---------------------------------------------------------------
 ' Returns
 '-----------
 '   An array containing the point estimate for x, the confidence
 '   interval for x, the standard deviation of x, and a
 '   correlation factor for the intervale (<0.1 is acceptable)
-'---------------------------------------------------------------
-'Revision History
-'---------------------------------------------------------------
-'
 '===============================================================
     Dim intI As Integer
     
@@ -83,27 +62,10 @@ End Function
 
 Function calib(y0, m, b, n, df, mse, x_bar, ss_x, r2, conf)
 '===============================================================
-'calib
 '---------------------------------------------------------------
 ' Purpose: To calculate the point estimate and confidence
 '          interval for new value of the independent variable X
 '          given a specific value of the dependent variable Y.
-'
-' Author : Jeff Moreland
-'          Ansell Healthcare Products, LLC.
-'          511 Westinghouse Rd.
-'          Pendleton, SC 29670
-'          jmoreland@ansell.com
-'
-' Date   : 22 Aug 2009
-'
-' Notes  : Based on the Minitab macro CALIB.MAC (1).
-' Refs   : [1] Derr, J. and S. Beder-Miller, CALIB.MAC. 1987,
-'              Minitab, Inc. (http://www.minitab.com/en-US/
-'              support/macros/default.aspx?action=code&id=11)
-'          [2] Neter, J., et al., Applied linear statistical
-'              models, ed., Irwin Homewood, IL: 1990.
-'
 '---------------------------------------------------------------
 ' Parameters
 '   y0, m, b, n, df, mse, x_bar, ss_x, conf
@@ -125,10 +87,6 @@ Function calib(y0, m, b, n, df, mse, x_bar, ss_x, r2, conf)
 '   x, the confidence interval for x, the standard deviation of
 '   x, and a correlation factor for the intervale (<0.1 is
 '   acceptable)
-'---------------------------------------------------------------
-'Revision History
-'---------------------------------------------------------------
-'
 '===============================================================
         Dim x_hat As Double     'Point estimate of X
         Dim clev As Double      'Confidence level
