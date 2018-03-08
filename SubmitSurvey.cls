@@ -81,16 +81,16 @@ With objOutlookMsg
 End With
 Set objOutlook = Nothing
 
-wb.Sheets("Book1").Visible = xlSheetVisible
-wb.Sheets("Intro").Visible = xlSheetVeryHidden
-wb.Sheets("Survey").Visible = xlSheetVeryHidden
-wb.Sheets("Model").Visible = xlSheetVeryHidden
-wb.Sheets("Summary Report").Visible = xlSheetVeryHidden
-wb.Sheets("Results").Visible = xlSheetVeryHidden
+Application.DisplayAlerts = False
+wb.Sheets("Sheet1").Visible = xlSheetVisible
+wb.Sheets("Intro").Delete
+wb.Sheets("Survey").Delete
+wb.Sheets("Model").Delete
+wb.Sheets("Summary Report").Delete
+wb.Sheets("Results").Delete
 
-With Worksheet
-    .Save
-End With
+ActiveWorkbook.Save
+
 
 End Sub
 
