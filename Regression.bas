@@ -7,20 +7,6 @@ Function CensoredRegression(Y, X, c)
 ' Purpose: To detemine least squares regression estimates for
 '          datasets that contain right-censored values based on
 '          iterative procedure proposed by Schmee and Hahn(1).
-'
-' Author : Jeff Moreland
-'          Ansell Healthcare Products, LLC.
-'          511 Westinghouse Rd.
-'          Pendleton, SC 29670
-'          jmoreland@ansell.com
-'
-' Date   : 22Aug2009
-'
-' Notes  : This procedure is used to verify the output from (1)
-'
-' Refs   : [1] Schmee, J. and Hahn, G. J., "A Simple Method
-'               for Regression Analysis with Censored Data",
-'               Technometrics, 21, 4, 1979.
 '---------------------------------------------------------------
 ' Parameters
 '-----------
@@ -33,10 +19,6 @@ Function CensoredRegression(Y, X, c)
 ' Returns
 '-----------
 '   A Linest array with new paramter estimates
-'---------------------------------------------------------------
-' Revision History
-'---------------------------------------------------------------
-'
 '===============================================================
     Dim x_r() As Double     'Array to hold x values
     Dim y_r() As Double     'Array to hold y values
@@ -140,10 +122,6 @@ Function iterate(x_r, y_r, y_0, c_r, estimates)
 '   estimates: linest estimates from previous iteration
 '---------------------------------------------------------------
 ' Returns : linest parameter estimates for new y's.
-'---------------------------------------------------------------
-' Revision History
-'---------------------------------------------------------------
-'
 '===============================================================
 
     Dim slope As Double
