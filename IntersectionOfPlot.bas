@@ -1,7 +1,4 @@
 Attribute VB_Name = "Module1"
-'
-' Algebra taken from various sources on the WWW
-'
 Option Explicit
 Public Function IntersectComplex(x1 As Double, y1 As Double, x2 As Double, y2 As Double, LineCoordinates As Range, Axis As Boolean) As Variant
 '
