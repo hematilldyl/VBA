@@ -1,7 +1,6 @@
 Attribute VB_Name = "Module2"
 Function InverseRegression(Y, X, y0, conf)
 '===============================================================
-' Code retrieved from 2016 ISEA Calculator template
 'InverseRegression
 '---------------------------------------------------------------
 ' Purpose: To perform least squares regression for independent X
