@@ -1,8 +1,6 @@
 Attribute VB_Name = "Module1"
 Function CensoredRegression(Y, X, c)
 '===============================================================
-' Code retrieved from 2016 ISEA Calculator template
-' CensoredRegression
 '---------------------------------------------------------------
 ' Purpose: To detemine least squares regression estimates for
 '          datasets that contain right-censored values based on
