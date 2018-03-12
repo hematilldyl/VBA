@@ -55,10 +55,7 @@ ActiveSheet.ExportAsFixedFormat Type:=xlTypePDF, Filename:= _
         Pathtofile, Quality:=xlQualityStandard, _
         IncludeDocProperties:=True, IgnorePrintAreas:=False, OpenAfterPublish:= _
         True
-        
-
-
-
+                        
 Set objOutlook = CreateObject("Outlook.Application")
 
 Set objOutlookMsg = objOutlook.CreateItem(olMailItem)
