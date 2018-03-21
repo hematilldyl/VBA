@@ -84,7 +84,7 @@ Set objOutlookMsg = objOutlook.CreateItem(olMailItem)
 'Subject = subject header, Body = body text of email, Attachments.Add to select the file (as path)
 
 With objOutlookMsg
-    Set objOutlookRecip = .Recipients.Add("dylan.hematillake@value-infinity.com")
+    Set objOutlookRecip = .Recipients.Add("dylan.hematillake@my-email.com")
     objOutlookRecip.Type = olTo
    .Subject = "Automated Response to Talent Management Survey"
    .Body = "This is an automated response to a completed Talent Management Survey"
