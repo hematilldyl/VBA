@@ -36,12 +36,12 @@ Dict(7) = "G"
 Dict(8) = "H"
 
 Set wb = ActiveWorkbook
-Set ws = wb.Sheets("Sheet1")
-Set ws2 = wb.Sheets("Data")
+Set ws = wb.Sheets("Matrices")
+Set ws2 = wb.Sheets("Report")
 ws.Activate
+ws.Unprotect ("MATRIX")
 
-
-For t = 0 To 7
+For t = 0 To 11
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 hold = Range("C" & (t * 6 + 5)).Value
 For Each c In Range("A" & (t * 6 + 5) & ":" & "H" & (t * 6 + 5))
@@ -80,6 +80,6 @@ For Each d In Range("A" & (t * 6 + 6) & ":" & "H" & (t * 6 + 6))
 Next d
 
 Next t
-
+ws.Protect ("MATRIX")
 ws2.Activate
 End Sub
