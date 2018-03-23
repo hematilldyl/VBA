@@ -1,18 +1,14 @@
 '===============================================================
 '---------------------------------------------------------------
-
 ' Purpose: Iteratively perform Simplex Algorithm on a transposed 
 '          system of equations to minimize under contraints
 '          generated from exponential smoothing forecasts and 
 '          maintenance reqs for t number of forecast periods
-
 '---------------------------------------------------------------
 '---------------------------------------------------------------
-
 ' Author: Dylan Hematillake
 ' Date: 2018-03-20
 ' Version: 3
-
 '---------------------------------------------------------------
 '===============================================================
 
