@@ -11,7 +11,6 @@ Attribute VB_Exposed = True
 ===============================================================
 'SubmitSurvey
 '---------------------------------------------------------------
-' Author: Dylan Hematillake
 ' Version: 1.5
 ' Purpose: Once the survey sheet has been filled, hides the sheets
 '          and only shows a blank sheet, print the results in the 
